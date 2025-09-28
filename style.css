@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: #0f0f0f;
+    color: rgb(150, 200, 245);
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #2a2a2a;
+    border-bottom: 5px solid #666;
+}
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid #ff8c42;
+    white-space: nowrap;
+    animation: typing 3s steps(20, end), blink .75s step-end infinite;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(160, 110, 210);
+    width: 18ch;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 18ch }
+}
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: #ff8c42 }
+}
+
+.section1 {
+    padding: 40px 20px;
+    text-align: center;
+    background: #0f0f0f;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.section2 {
+    padding: 40px 20px;
+    text-align: center;
+    background: #0f0f0f;
+}
+
+.recipe-list {
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.recipe-list li {
+    list-style-type: none;
+    margin: 15px 0;
+    background: #1c1c1c;
+    border: 1px solid #666;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.recipe-list li:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transform: scale(1.025);
+}
+
+.recipe-list a {
+    display: flex;
+    align-items: center;
+    color: #a0f847;
+    padding: 10px;
+}
+
+.recipe-list img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #2a2a2a;
+    border-top: 1px solid #666;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #aaa;
+}
